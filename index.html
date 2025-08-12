@@ -9,42 +9,52 @@
     body {
       background-color: #f8f9fa;
     }
+
     .hero {
       background-image: url('images.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 60px 20px;
-  text-align: center;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 60px 20px;
     }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      text-align: left;
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid white;
+      margin-right: 20px;
+    }
+
     .section-title {
       margin-top: 40px;
       margin-bottom: 20px;
     }
+
     .contact-info {
       font-size: 1.1rem;
-      .profile-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid white;
-}
-
     }
   </style>
 </head>
 <body>
 
-  <div class="hero d-flex align-items-start">
-  <img src="474746018_1678721736403632_4691149622295737913_n.jpg" alt="Profile Image" class="profile-img me-3">
-  <div>
-    <h1>Jan Vincent Gabayno</h1>
-    <h4>BI Developer – Data Analytics</h4>
-    <p class="mt-3">Transforming data into actionable insights for smarter decisions.</p>
+  <div class="hero">
+    <div class="hero-content">
+      <img src="474746018_1678721736403632_4691149622295737913_n.jpg" alt="Profile Image" class="profile-img">
+      <div>
+        <h1>Jan Vincent Gabayno</h1>
+        <h4>BI Developer – Data Analytics</h4>
+        <p class="mt-3">Transforming data into actionable insights for smarter decisions.</p>
+      </div>
+    </div>
   </div>
-</div>
-
 
   <div class="container">
     <h2 class="section-title">Career Overview</h2>
