@@ -32,18 +32,47 @@
       margin-right: 20px;
     }
 
+    .section {
+      padding: 60px 0;
+    }
+
     .section-title {
-      margin-top: 40px;
       margin-bottom: 20px;
     }
 
     .contact-info {
       font-size: 1.1rem;
     }
+
+    nav {
+      background-color: #343a40;
+    }
+
+    nav a {
+      color: white !important;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark px-4">
+    <a class="navbar-brand" href="#">Jan Vincent Gabayno</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skillset</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <div class="hero">
     <div class="container">
       <img src="474746018_1678721736403632_4691149622295737913_n.jpg" alt="Profile Image" class="profile-img">
@@ -55,30 +84,51 @@
     </div>
   </div>
 
-  <div class="container">
-    <h2 class="section-title">Career Overview</h2>
+  <!-- About Me -->
+  <section id="about" class="section container">
+    <h2 class="section-title">About Me</h2>
     <p>
-      A highly analytical and results-driven Business Intelligence (BI) Developer with 6+ years of experience designing, developing, and implementing BI solutions to drive strategic decision-making. Skilled in data modeling, report/dashboard creation, and data visualization using Power BI, along with strong expertise in SQL and database management systems. Proven ability to work cross-functionally to translate business requirements into actionable insights, contributing to data-driven cultures within organizations.
+      A highly analytical and results-driven Business Intelligence (BI) Developer with 6+ years of experience designing, developing, and implementing BI solutions to drive strategic decision-making. Skilled in data modeling, report/dashboard creation, and data visualization using Power BI, along with strong expertise in SQL and database management systems.
     </p>
+  </section>
 
-    <h2 class="section-title">Key Competencies</h2>
+  <!-- Skillset -->
+  <section id="skills" class="section container">
+    <h2 class="section-title">Skillset</h2>
+    <h5>Technical Skills</h5>
     <ul>
       <li>Power BI Desktop, Service, DAX, Power Query</li>
       <li>Data Modelling & ETL</li>
       <li>MS SQL, Azure SQL, Azure Databricks</li>
-      <li>Alteryx</li>
-      <li>Power Automate</li>
-      <li>Logic Apps</li>
-      <li>Performance Optimization</li>
-      <li>End-to-End Development</li>
+      <li>Alteryx, Power Automate, Logic Apps</li>
     </ul>
+    <h5>Soft Skills</h5>
+    <ul>
+      <li>Analytical Thinking</li>
+      <li>Communication & Collaboration</li>
+      <li>Problem Solving</li>
+      <li>Adaptability</li>
+    </ul>
+  </section>
 
+  <!-- Projects -->
+  <section id="projects" class="section container">
+    <h2 class="section-title">Projects</h2>
+    <p>You can upload or link your `.pbix` files here. For example:</p>
+    <ul>
+      <li><a href="path/to/project1.pbix" download>Sales Dashboard.pbix</a></li>
+      <li><a href="path/to/project2.pbix" download>Customer Insights.pbix</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section container">
     <h2 class="section-title">Contact Me</h2>
     <p class="contact-info">
       📧 Email: <a href="mailto:jbngpinas01@gmail.com">jbngpinas01@gmail.com</a><br>
       📱 Mobile: 0968 773 5959
     </p>
-  </div>
+  </section>
 
 </body>
 </html>
